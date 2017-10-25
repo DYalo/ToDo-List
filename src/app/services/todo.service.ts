@@ -16,7 +16,7 @@ export class TodoService {
    this.nextId = 3;
  }
    	public addTodo(text: string, date: Date): void {
-   		
+   		  
    			let todo = new Todo(this.nextId, text, this.date);
    			this.todos.push(todo);
    			this.nextId++;

@@ -19,6 +19,7 @@ export class TodoInputComponent implements OnInit {
   private addTodo(): void {
   		this.todoService.addTodo(this.todoText, this.todoDate);
   		this.todoText = '';
+      
      
   }
 }
