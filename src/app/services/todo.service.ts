@@ -5,20 +5,19 @@ export class TodoService {
 
 	private todos: Todo[];
 	private nextId: number;
+  private date: Date;
 
   constructor() {
   	this.todos = [
-  		new Todo(0, "LOL"),
-  		new Todo(1, "LOLOL"),
-  		new Todo(2, "Form")
+  		new Todo(0, "LOL", new Date(23,12,2017))
   	];
  
 
    this.nextId = 3;
  }
-   	public addTodo(text: string): void {
+   	public addTodo(text: string, date: Date): void {
    		
-   			let todo = new Todo(this.nextId, text);
+   			let todo = new Todo(this.nextId, text, this.date);
    			this.todos.push(todo);
    			this.nextId++;
    	}
