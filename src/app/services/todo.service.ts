@@ -41,6 +41,6 @@ export class TodoService {
 
 
     private setLocaleStorageTodos(todos: Todo[]): void {
-        localStorage.setItem('todos', JSON.stringify({todos: todos}));
+        localStorage.setItem('todos', JSON.stringify({todos}));
     }
 }
